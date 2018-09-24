@@ -1,0 +1,14 @@
+<a routerLink="../candidates">
+  <app-layout-card>
+    <app-layout-card-header>
+      Candidates
+    </app-layout-card-header>
+    <app-layout-card-body>
+        <div class="progress-wrapper">
+            <div class="current">{{current}}</div>
+            <round-progress [color]="'#57636e'" [duration]="1600" [responsive]="false" [current]="current" [max]="current"></round-progress>
+        </div>
+    </app-layout-card-body>
+  </app-layout-card>
+</a>
+

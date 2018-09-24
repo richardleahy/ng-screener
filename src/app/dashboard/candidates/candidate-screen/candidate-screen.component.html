@@ -1,0 +1,53 @@
+<app-spinner [hidden]="!submitted"></app-spinner>
+
+<app-layout-card [hidden]="submitted">
+  <app-layout-card-header>
+    <a (click)="locationBack()"><fa-icon [icon]="faArrowLeft"></fa-icon></a>
+    {{candidate.first_name | titlecase}} {{candidate.surname | titlecase}} - {{candidate.screen_name | titlecase}}
+  </app-layout-card-header>
+
+  <app-layout-card-body>
+    <form (ngSubmit)="onSubmit()" #candidateForm="ngForm">
+      <app-error [errors]="errors" title="Aw, Snap!"></app-error>
+
+      <div class="mb-5">
+        <span class="">Score:</span><span class="info"> {{score.score}}% </span><br /> 
+        <span class="">Questions Answered:</span><span class="info"> {{score.questions_answered}} of {{screen?.questions.length}}</span>
+      </div>
+
+      <div class="form-group">
+        <label class="font-weight-bold">
+          Question {{idx + 1}} of {{screen?.questions.length}}
+        </label><br> 
+        {{currentQuestion?.question}}
+      </div>
+
+      <div class="form-group">
+        <div>
+          <label class="font-weight-bold">Answered correctly?</label>
+        </div>
+
+        <div class="form-check form-check-inline required">
+          <input type="radio" name="currentAnswer" id="radioYes" [value]="true" 
+                 [(ngModel)]="currentAnswer.answer_correct" class="form-check-input" required />
+          <label class="form-check-label" for="radioYes">Yes</label>
+        </div>
+
+        <div class="form-check form-check-inline required">
+          <input type="radio" name="currentAnswer" id="radioNo" [value]="false" 
+                 [(ngModel)]="currentAnswer.answer_correct" class="form-check-input" required />
+          <label class="form-check-label" for="radioNo">No</label>
+        </div>
+      </div>
+
+      <button (click)="prevQuestion()" type="button" class="btn btn-dark mr-1" [disabled]="idx===0">
+          <fa-icon [icon]="faArrowLeft"></fa-icon>
+      </button>
+      <button type="submit" class="btn btn-dark ml-1" [disabled]="!candidateForm.form.valid">
+          <fa-icon [icon]="faArrowRight"></fa-icon>
+      </button>
+
+
+    </form>
+  </app-layout-card-body>
+</app-layout-card>

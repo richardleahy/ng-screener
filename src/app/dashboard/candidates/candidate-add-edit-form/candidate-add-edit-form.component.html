@@ -1,0 +1,74 @@
+<app-spinner [hidden]="!submitted"></app-spinner>
+
+<app-layout-card [hidden]="submitted">
+  <app-layout-card-header>
+      <a (click)="locationBack()"><fa-icon [icon]="faArrowLeft"></fa-icon></a> 
+      {{this.id ? 'Candidate': 'New Candidate'}}
+  </app-layout-card-header>
+
+  <app-layout-card-body>
+      <form (ngSubmit)="onSubmit()" #candidateForm="ngForm">
+          <app-error [errors]="errors" title="Aw, Snap!"></app-error>
+          
+          <div class="form-group required">
+            <label>First Name</label>
+            <input #firstNameM="ngModel" [(ngModel)]="candidate.first_name" 
+                      class="form-control" name="first_name" required />
+            <div [hidden]="firstNameM.pristine || firstNameM.valid" 
+                 class="text-left text-danger">
+                 First name is required
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label>Surname</label>
+            <input #surnameM="ngModel" [(ngModel)]="candidate.surname" 
+                      class="form-control" name="surname" required />
+            <div [hidden]="surnameM.pristine || surnameM.valid" 
+                 class="text-left text-danger">
+                 Surname is required
+            </div>
+          </div>
+
+          <div class="form-group required">
+            <label>Email</label>
+            <input type="email" #emailM="ngModel" [(ngModel)]="candidate.email" 
+                      class="form-control" name="email" required />
+            <div [hidden]="emailM.pristine || emailM.valid" 
+                 class="text-left text-danger">
+                 Email is required
+            </div>
+          </div>
+          
+          <div class="form-group required">
+              <label>Screen</label>
+              <select #screenM="ngModel" [(ngModel)]="candidate.screen" 
+                      class="form-control" name="screen" required>
+                  <option *ngFor="let screen of screens" [value]="screen.url">
+                    {{screen.name}}
+                  </option>
+              </select>
+              <div [hidden]="screenM.pristine || screenM.valid" 
+                   class="text-left text-danger">
+                   Screen is required
+              </div>
+          </div>
+          
+
+          <button type="submit" class="btn btn-dark" 
+                  [disabled]="!candidateForm.form.valid || submitted">
+                  <fa-icon [icon]="faSave"></fa-icon>
+          </button>
+
+          <button type="button" class="btn btn-dark ml-1" 
+                  [hidden]="!id" routerLink="../../screen/{{id}}">
+                  Screen Candidate <fa-icon [icon]="faDesktop"></fa-icon>
+          </button>
+        </form>
+  </app-layout-card-body>
+</app-layout-card>
+
+
+
+
+

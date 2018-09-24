@@ -1,0 +1,33 @@
+<app-layout-card>
+  <app-layout-card-header>
+    <a (click)="locationBack()"><fa-icon [icon]="faArrowLeft"></fa-icon></a> New Category
+  </app-layout-card-header>
+  <app-layout-card-body>
+    <form class="form-inline align-items-start">
+      <div class="form-group ">
+        <label class="sr-only">Category: </label>
+        <input #categoryName class="form-control" placeholder="Category" />
+      </div>
+      <button type="button" class="btn btn-dark ml-1" (click)="addCategory(categoryName.value); categoryName.value=''">
+        <fa-icon [icon]="faSave"></fa-icon>
+      </button>
+    </form>
+  </app-layout-card-body>
+</app-layout-card>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let category of categories">
+        <td contenteditable="true" [(ngModel)]="category.category" (keyup)="editCategory(category)" [textContent]="model"></td>
+        <td><a><fa-icon [icon]=faTrash (click)="deleteCategory(category)"></fa-icon></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

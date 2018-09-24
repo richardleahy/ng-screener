@@ -1,0 +1,30 @@
+<app-layout-card>
+  <app-layout-card-header>
+    <a (click)="locationBack()"><fa-icon [icon]="faArrowLeft"></fa-icon></a>
+    Screens
+  </app-layout-card-header>
+  <app-layout-card-body>
+    <form class="form-inline align-items-start">
+      <button class="btn btn-dark ml-1" routerLink="new">
+        New <fa-icon [icon]="faPlus"></fa-icon>
+      </button>
+    </form>
+  </app-layout-card-body>
+</app-layout-card>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Screen</th>
+        <th>#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let screen of screens | filter: filterBox">
+        <td><a routerLink="detail/{{screen.pk}}">{{screen.name}}</a></td>
+        <td><a><fa-icon [icon]=faTrash (click)="deleteScreen(screen)"></fa-icon></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

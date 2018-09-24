@@ -1,0 +1,49 @@
+.wrapper {
+    height:100%;
+}
+
+.card {
+    border:none;
+}
+.card-body {
+    padding:0;
+    min-width: 300px;
+}
+small {
+    margin:.75rem 0 .95rem 0;
+    display:block;
+}
+.card-title {
+    margin-bottom: .175rem;
+}
+
+.ng-invalid:not(form) {
+    
+}
+
+.ng-valid[required] {
+    
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.error {
+    font-size: .8rem;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        box-shadow: 1px 1px 5px 0 rgba(0,0,0,.5);
+        width:90%;
+        height:90%;
+    }
+
+    .card-body {
+     width: 500px;
+     padding:1.25rem;
+     flex-grow: 0;
+    }
+
+}

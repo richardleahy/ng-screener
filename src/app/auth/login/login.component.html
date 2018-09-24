@@ -1,0 +1,51 @@
+<div class="wrapper d-flex justify-content-center align-items-center">
+    <div class="card text-center align-items-center justify-content-center">
+        <div class="card-body">
+            <h2 class="card-title">Sign in</h2>
+            <small>Sign in with your email or username</small>
+            <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+                <div [hidden]="!errors || submitted" class="alert alert-danger">
+                    <div class="error text-left" *ngFor="let error of errors?.errors">{{error}}</div>
+                </div>
+                <div [hidden]="!submitted" class="mb-2">
+                    <fa-icon [icon]="faSpinner" [spin]="true" size="2x"></fa-icon>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="sr-only">Email address</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <fa-icon [icon]="faAt"></fa-icon>
+                            </div>
+                        </div>
+                        <input #email="ngModel" [(ngModel)]="user.username"  name="email" type="text" class="form-control" placeholder="Username"
+                            required />
+                    </div>
+                    <div [hidden]="email.valid || email.pristine" class="text-left text-danger">
+                        Username is required
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="password" class="sr-only">Password</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <fa-icon [icon]="faKey"></fa-icon>
+                            </div>
+                        </div>
+                        <input #password="ngModel" [(ngModel)]="user.password" name="password" type="password" class="form-control" id="password"
+                            placeholder="Password" required>
+                    </div>
+                    <div [hidden]="password.valid || password.pristine" class="text-left text-danger">
+                        Password is required
+                    </div>
+                </div>
+                <button class="btn btn-secondary btn-block" type="submit" [disabled]="!loginForm.form.valid || submitted">
+                    SIGN IN
+                </button>
+            </form>
+        </div>
+        <div>
+        </div>

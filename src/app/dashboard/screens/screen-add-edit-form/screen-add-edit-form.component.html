@@ -1,0 +1,52 @@
+<app-spinner [hidden]="!submitted"></app-spinner>
+
+<app-layout-card [hidden]="submitted">
+  <app-layout-card-header>
+    <a (click)="locationBack()"><fa-icon [icon]="faArrowLeft"></fa-icon></a>
+    {{this.id ? 'Edit Screen': 'New Screen'}}
+  </app-layout-card-header>
+
+  <app-layout-card-body>
+    <form (ngSubmit)="onSubmit()" #screenForm="ngForm">
+      <app-error [errors]="errors" title="Aw, Snap!"></app-error>
+
+      <div class="form-group required">
+        <label>Screen (eg Python Developer)</label>
+        <input type="text" #screenM="ngModel" [(ngModel)]="screen.name" class="form-control" name="screen" required />
+        <div [hidden]="screenM.pristine || screenM.valid" class="text-left text-danger">
+          Screen is required
+        </div>
+      </div>
+
+      <div class="form-group required">
+        <label for="question">Questions</label>
+        <div class="form-group">
+          <input [(ngModel)]="filterBox" name="filterBox" placeholder="Filter by category" class="form-control" />
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Question</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let question of questions | filter: filterBox">
+              <td><input type="checkbox" [value]="question" (click)="toggleQuestions(question)" [checked]="checkSelected(question)"
+                />
+              </td>
+              <td>{{question.question}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button type="submit" class="btn btn-dark" [disabled]="!screenForm.form.valid || submitted || selectedQuestions.length <= 0">
+        <fa-icon [icon]="faSave"></fa-icon>
+      </button>
+    </form>
+  </app-layout-card-body>
+</app-layout-card>

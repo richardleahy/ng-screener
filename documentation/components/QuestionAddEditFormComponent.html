@@ -1,0 +1,1427 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ng-screener documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ng-screener documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>QuestionAddEditFormComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Class representing a QuestionAddEditFormComponent.</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-question-add-edit-form</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>question-add-edit-form.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./question-add-edit-form.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#categories">categories</a>
+                            </li>
+                            <li>
+                                <a href="#errors">errors</a>
+                            </li>
+                            <li>
+                                <a href="#faArrowLeft">faArrowLeft</a>
+                            </li>
+                            <li>
+                                <a href="#faPlus">faPlus</a>
+                            </li>
+                            <li>
+                                <a href="#faSave">faSave</a>
+                            </li>
+                            <li>
+                                <a href="#id">id</a>
+                            </li>
+                            <li>
+                                <a href="#question">question</a>
+                            </li>
+                            <li>
+                                <a href="#saveAndAdd">saveAndAdd</a>
+                            </li>
+                            <li>
+                                <a href="#submitted">submitted</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addQuestion">addQuestion</a>
+                            </li>
+                            <li>
+                                <a href="#compareFn">compareFn</a>
+                            </li>
+                            <li>
+                                <a href="#getCategories">getCategories</a>
+                            </li>
+                            <li>
+                                <a href="#getQuestion">getQuestion</a>
+                            </li>
+                            <li>
+                                <a href="#locationBack">locationBack</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#updateQuestion">updateQuestion</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, questionService: <a href="../injectables/QuestionService.html">QuestionService</a>, location: <a href="https://angular.io/api/common/Location" target="_blank">Location</a>, categoryService: <a href="../injectables/CategoryService.html">CategoryService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Create a QuestionAddEditFormComponent.</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><ul>
+<li>Injected route.</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>questionService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/QuestionService.html" target="_self" >QuestionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><ul>
+<li>Injected Question service.</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/common/Location" target="_blank" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><ul>
+<li>Injected location.</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>categoryService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/CategoryService.html" target="_self" >CategoryService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><ul>
+<li>Injected category service.</li>
+</ul>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="addQuestion"></a>
+                        <span class="name">
+                            <b>
+                            addQuestion
+                            </b>
+                            <a href="#addQuestion"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>addQuestion()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:108</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Add question.
+Return to previous page if successful, otherwise
+sets errors.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="compareFn"></a>
+                        <span class="name">
+                            <b>
+                            compareFn
+                            </b>
+                            <a href="#compareFn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>compareFn(c1: <a href="../classes/Category.html">Category</a>, c2: <a href="../classes/Category.html">Category</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:74</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Compare objects for multiselect.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>c1</td>
+                                                        <td>
+                                                                    <code><a href="../classes/Category.html" target="_self" >Category</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                                <tr>
+                                                        <td>c2</td>
+                                                        <td>
+                                                                    <code><a href="../classes/Category.html" target="_self" >Category</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getCategories"></a>
+                        <span class="name">
+                            <b>
+                            getCategories
+                            </b>
+                            <a href="#getCategories"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getCategories()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:81</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Get all categories.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getQuestion"></a>
+                        <span class="name">
+                            <b>
+                            getQuestion
+                            </b>
+                            <a href="#getQuestion"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getQuestion(id: )</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:94</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Get question</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="locationBack"></a>
+                        <span class="name">
+                            <b>
+                            locationBack
+                            </b>
+                            <a href="#locationBack"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>locationBack()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="142" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:142</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Navigate to previous page.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onSubmit"></a>
+                        <span class="name">
+                            <b>
+                            onSubmit
+                            </b>
+                            <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>onSubmit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="153" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:153</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Submit the form.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateQuestion"></a>
+                        <span class="name">
+                            <b>
+                            updateQuestion
+                            </b>
+                            <a href="#updateQuestion"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>updateQuestion()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:126</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Update question.
+Return to previous page if successful, otherwise
+sets errors.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="categories"></a>
+                        <span class="name">
+                            <b>
+                            categories
+                            </b>
+                            <a href="#categories"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>categories:     <code><a href="../classes/Category.html" target="_self" >Category[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Category.html" target="_self" >Category[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Array of categories </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errors"></a>
+                        <span class="name">
+                            <b>
+                            errors
+                            </b>
+                            <a href="#errors"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>errors:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>form errors </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="faArrowLeft"></a>
+                        <span class="name">
+                            <b>
+                            faArrowLeft
+                            </b>
+                            <a href="#faArrowLeft"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>faArrowLeft:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faArrowLeft</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Font Awesome left arrow icon </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="faPlus"></a>
+                        <span class="name">
+                            <b>
+                            faPlus
+                            </b>
+                            <a href="#faPlus"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>faPlus:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faPlus</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Font Awesome plus icon </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="faSave"></a>
+                        <span class="name">
+                            <b>
+                            faSave
+                            </b>
+                            <a href="#faSave"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>faSave:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faSave</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Font Awesome save icon </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="id"></a>
+                        <span class="name">
+                            <b>
+                            id
+                            </b>
+                            <a href="#id"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>id:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>routed question </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="question"></a>
+                        <span class="name">
+                            <b>
+                            question
+                            </b>
+                            <a href="#question"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>question:     <code><a href="../classes/Question.html" target="_self" >Question</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Question.html" target="_self" >Question</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&lt;Question&gt;{}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Question data </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="saveAndAdd"></a>
+                        <span class="name">
+                            <b>
+                            saveAndAdd
+                            </b>
+                            <a href="#saveAndAdd"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>saveAndAdd:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>save add btn visible </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="submitted"></a>
+                        <span class="name">
+                            <b>
+                            submitted
+                            </b>
+                            <a href="#submitted"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>submitted:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/dashboard/questions/question-add-edit-form/question-add-edit-form.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>form submission </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Question } from &#x27;../question&#x27;;
+import { QuestionService } from &#x27;../services/question.service&#x27;;
+import { Location } from &#x27;@angular/common&#x27;;
+import { HttpResult } from &#x27;../../../core/services/http-result&#x27;;
+import { CategoryService } from &#x27;../../categories/services/category.service&#x27;;
+import { Category } from &#x27;../../categories/category&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { faArrowLeft} from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+import { faSave, faPlus} from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+
+/**
+ * Class representing a QuestionAddEditFormComponent.
+ */
+@Component({
+  selector: &#x27;app-question-add-edit-form&#x27;,
+  templateUrl: &#x27;./question-add-edit-form.component.html&#x27;,
+  styleUrls: [&#x27;./question-add-edit-form.component.scss&#x27;]
+})
+export class QuestionAddEditFormComponent implements OnInit {
+
+  /** Question data */
+  question: Question &#x3D; &lt;Question&gt;{};
+  /** Array of categories */
+  categories: Category[];
+  /** form errors */
+  errors: any &#x3D; {};
+  /** form submission */
+  submitted: boolean &#x3D; false;
+  /** save add btn visible */
+  saveAndAdd: boolean &#x3D; false;
+  /** routed question */
+  id: number;
+  /** Font Awesome left arrow icon */
+  faArrowLeft &#x3D; faArrowLeft;
+  /** Font Awesome save icon */
+  faSave &#x3D; faSave;
+  /** Font Awesome plus icon */
+  faPlus &#x3D; faPlus;
+
+  /**
+   * Create a QuestionAddEditFormComponent.
+   * @param {ActivatedRoute} route - Injected route.
+   * @param {QuestionService} questionService - Injected Question service.
+   * @param {Location} location - Injected location.
+   * @param {CategoryService} categoryService - Injected category service.
+   */
+  constructor(
+    private route: ActivatedRoute,
+    private questionService: QuestionService,
+    private location: Location,
+    private categoryService: CategoryService
+  ) { }
+
+  ngOnInit() {
+    // get question if routed.
+    this.route.paramMap.subscribe(pmap &#x3D;&gt; {
+      if(pmap.get(&#x27;id&#x27;)) {
+        this.id &#x3D; +pmap.get(&#x27;id&#x27;);
+      }
+  
+      if (this.id) {
+        this.getQuestion(this.id);
+      }
+  
+    });
+
+    this.getCategories();
+  }
+
+  /**
+   * Compare objects for multiselect.
+   */
+  compareFn(c1: Category, c2: Category ): boolean {
+    return c1 &amp;&amp; c2 ? c1.pk &#x3D;&#x3D;&#x3D; c2.pk: c1 &#x3D;&#x3D;&#x3D; c2
+  }
+
+  /**
+   * Get all categories.
+   */
+  getCategories(): void {
+    this.categoryService.getCategories()
+      .subscribe((res: HttpResult) &#x3D;&gt; {
+        if (res.isSuccess()) {
+          this.categories &#x3D; res.getResponse();
+        }
+    });
+  }
+
+  /**
+   * Get question
+   * @param id 
+   */
+  getQuestion(id): void {
+    this.questionService.getQuestion(id)
+      .subscribe((res: HttpResult) &#x3D;&gt; {
+        if (res.isSuccess()) {
+          this.question &#x3D; res.getResponse();
+        }
+    });
+  }
+
+  /**
+   * Add question.
+   * Return to previous page if successful, otherwise
+   * sets errors.
+   */
+  addQuestion() {
+    this.questionService.addQuestion(this.question)
+      .subscribe((res: HttpResult) &#x3D;&gt; {
+        this.submitted &#x3D; false;
+      
+        if (!res.isSuccess()) {
+          this.errors &#x3D; res.getErrors();
+        } else {
+          this.locationBack();
+        }
+    });
+  }
+
+    /**
+   * Update question.
+   * Return to previous page if successful, otherwise
+   * sets errors.
+   */
+  updateQuestion() {
+    this.questionService.updateQuestion(this.question)
+      .subscribe((res: HttpResult) &#x3D;&gt; {
+        this.submitted &#x3D; false;
+
+        if (!res.isSuccess()) {
+          this.errors &#x3D; res.getErrors();
+        } else {
+          this.locationBack();
+        }
+    });
+  }
+
+  /**
+   * Navigate to previous page.
+   */
+  locationBack() {
+    // save and add another
+    if (!this.saveAndAdd) {
+      this.location.back();
+    }
+    this.saveAndAdd &#x3D; false;
+  }
+
+  /**
+   * Submit the form.
+   */
+  onSubmit() {
+    this.submitted &#x3D; true;
+
+    // edit mode.
+    if (this.id) {
+      this.updateQuestion();
+    } else {
+      // new question.
+      this.addQuestion();
+    }    
+
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-spinner [hidden]&#x3D;&quot;!submitted&quot;&gt;&lt;/app-spinner&gt;
+
+&lt;app-layout-card [hidden]&#x3D;&quot;submitted&quot;&gt;
+  &lt;app-layout-card-header&gt;
+      &lt;a (click)&#x3D;&quot;locationBack()&quot;&gt;&lt;fa-icon [icon]&#x3D;&quot;faArrowLeft&quot;&gt;&lt;/fa-icon&gt;&lt;/a&gt; 
+      {{this.id ? &#x27;Edit Question&#x27;: &#x27;New Question&#x27;}}
+  &lt;/app-layout-card-header&gt;
+
+  &lt;app-layout-card-body&gt;
+      &lt;form (ngSubmit)&#x3D;&quot;onSubmit()&quot; #questionForm&#x3D;&quot;ngForm&quot;&gt;
+          &lt;app-error [errors]&#x3D;&quot;errors&quot; title&#x3D;&quot;Aw, Snap!&quot;&gt;&lt;/app-error&gt;
+          
+          &lt;div class&#x3D;&quot;form-group required&quot;&gt;
+            &lt;label&gt;Question&lt;/label&gt;
+            &lt;textarea #questionM&#x3D;&quot;ngModel&quot; [(ngModel)]&#x3D;&quot;question.question&quot; 
+                      class&#x3D;&quot;form-control&quot; name&#x3D;&quot;question&quot; required&gt;&lt;/textarea&gt;
+            &lt;div [hidden]&#x3D;&quot;questionM.pristine || questionM.valid&quot; 
+                 class&#x3D;&quot;text-left text-danger&quot;&gt;
+                 Question is required
+            &lt;/div&gt;
+          &lt;/div&gt;
+          
+          &lt;div class&#x3D;&quot;form-group required&quot;&gt;
+              &lt;label for&#x3D;&quot;category&quot;&gt;Category [Ctrl + Click]&lt;/label&gt;
+              &lt;select size&#x3D;&quot;10&quot; [compareWith]&#x3D;&quot;compareFn&quot; #categoryM&#x3D;&quot;ngModel&quot; [(ngModel)]&#x3D;&quot;question.categories&quot; 
+                      class&#x3D;&quot;form-control&quot; id&#x3D;&quot;category&quot; name&#x3D;&quot;category&quot; multiple required&gt;
+                  &lt;option *ngFor&#x3D;&quot;let category of categories&quot; [value]&#x3D;&quot;category&quot;&gt;
+                    {{category.category}}
+                  &lt;/option&gt;
+              &lt;/select&gt;
+              &lt;div [hidden]&#x3D;&quot;categoryM.pristine || categoryM.valid&quot; 
+                   class&#x3D;&quot;text-left text-danger&quot;&gt;
+                   Category is required
+              &lt;/div&gt;
+          &lt;/div&gt;
+          
+          &lt;button [hidden]&#x3D;&quot;id&quot; (click)&#x3D;&quot;saveAndAdd &#x3D; true; onSubmit(); questionForm.reset();&quot; type&#x3D;&quot;button&quot; class&#x3D;&quot;mr-1 btn btn-dark&quot; 
+                  [disabled]&#x3D;&quot;!questionForm.form.valid || submitted&quot;&gt;
+                  &lt;fa-icon [icon]&#x3D;&quot;faSave&quot;&gt;&lt;/fa-icon&gt;&lt;fa-icon [icon]&#x3D;&quot;faPlus&quot; class&#x3D;&quot;ml-1&quot;&gt;&lt;/fa-icon&gt;
+          &lt;/button&gt;
+          &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-dark&quot; 
+                  [disabled]&#x3D;&quot;!questionForm.form.valid || submitted&quot;&gt;
+                  &lt;fa-icon [icon]&#x3D;&quot;faSave&quot;&gt;&lt;/fa-icon&gt;
+          &lt;/button&gt;
+        &lt;/form&gt;
+  &lt;/app-layout-card-body&gt;
+&lt;/app-layout-card&gt;
+
+
+
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-spinner [hidden]="!submitted"></app-spinner><app-layout-card [hidden]="submitted">  <app-layout-card-header>      <a (click)="locationBack()"><fa-icon [icon]="faArrowLeft"></fa-icon></a>       {{this.id ? \'Edit Question\': \'New Question\'}}  </app-layout-card-header>  <app-layout-card-body>      <form (ngSubmit)="onSubmit()" #questionForm="ngForm">          <app-error [errors]="errors" title="Aw, Snap!"></app-error>                    <div class="form-group required">            <label>Question</label>            <textarea #questionM="ngModel" [(ngModel)]="question.question"                       class="form-control" name="question" required></textarea>            <div [hidden]="questionM.pristine || questionM.valid"                  class="text-left text-danger">                 Question is required            </div>          </div>                    <div class="form-group required">              <label for="category">Category [Ctrl + Click]</label>              <select size="10" [compareWith]="compareFn" #categoryM="ngModel" [(ngModel)]="question.categories"                       class="form-control" id="category" name="category" multiple required>                  <option *ngFor="let category of categories" [value]="category">                    {{category.category}}                  </option>              </select>              <div [hidden]="categoryM.pristine || categoryM.valid"                    class="text-left text-danger">                   Category is required              </div>          </div>                    <button [hidden]="id" (click)="saveAndAdd = true; onSubmit(); questionForm.reset();" type="button" class="mr-1 btn btn-dark"                   [disabled]="!questionForm.form.valid || submitted">                  <fa-icon [icon]="faSave"></fa-icon><fa-icon [icon]="faPlus" class="ml-1"></fa-icon>          </button>          <button type="submit" class="btn btn-dark"                   [disabled]="!questionForm.form.valid || submitted">                  <fa-icon [icon]="faSave"></fa-icon>          </button>        </form>  </app-layout-card-body></app-layout-card></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'CandidateAddEditFormComponent', 'selector': 'app-candidate-add-edit-form'},{'name': 'CandidateScreenComponent', 'selector': 'app-candidate-screen'},{'name': 'CandidatesComponent', 'selector': 'app-candidates'},{'name': 'CandidatesListComponent', 'selector': 'app-candidates-list'},{'name': 'CategoriesComponent', 'selector': 'app-categories'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'HomeCandidatesComponent', 'selector': 'app-candidates'},{'name': 'HomeCategoriesComponent', 'selector': 'app-categories'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HomeQuestionsComponent', 'selector': 'app-questions'},{'name': 'HomeScreensComponent', 'selector': 'app-screens'},{'name': 'LayoutCardBodyComponent', 'selector': 'app-layout-card-body'},{'name': 'LayoutCardComponent', 'selector': 'app-layout-card'},{'name': 'LayoutCardFooterComponent', 'selector': 'app-layout-card-footer'},{'name': 'LayoutCardHeaderComponent', 'selector': 'app-layout-card-header'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LayoutContentComponent', 'selector': 'app-layout-content'},{'name': 'LayoutFooterComponent', 'selector': 'app-layout-footer'},{'name': 'LayoutHeaderComponent', 'selector': 'app-layout-header'},{'name': 'LayoutSidebarComponent', 'selector': 'app-layout-sidebar'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'QuestionAddEditFormComponent', 'selector': 'app-question-add-edit-form'},{'name': 'QuestionsComponent', 'selector': 'app-questions'},{'name': 'QuestionsListComponent', 'selector': 'app-questions-list'},{'name': 'ScreenAddEditFormComponent', 'selector': 'app-screen-add-edit-form'},{'name': 'ScreensComponent', 'selector': 'app-screens'},{'name': 'ScreensListComponent', 'selector': 'app-screens-list'},{'name': 'SpinnerComponent', 'selector': 'app-spinner'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'QuestionAddEditFormComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'QuestionAddEditFormComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

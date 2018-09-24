@@ -1,0 +1,52 @@
+<app-spinner [hidden]="!submitted"></app-spinner>
+
+<app-layout-card [hidden]="submitted">
+  <app-layout-card-header>
+      <a (click)="locationBack()"><fa-icon [icon]="faArrowLeft"></fa-icon></a> 
+      {{this.id ? 'Edit Question': 'New Question'}}
+  </app-layout-card-header>
+
+  <app-layout-card-body>
+      <form (ngSubmit)="onSubmit()" #questionForm="ngForm">
+          <app-error [errors]="errors" title="Aw, Snap!"></app-error>
+          
+          <div class="form-group required">
+            <label>Question</label>
+            <textarea #questionM="ngModel" [(ngModel)]="question.question" 
+                      class="form-control" name="question" required></textarea>
+            <div [hidden]="questionM.pristine || questionM.valid" 
+                 class="text-left text-danger">
+                 Question is required
+            </div>
+          </div>
+          
+          <div class="form-group required">
+              <label for="category">Category [Ctrl + Click]</label>
+              <select size="10" [compareWith]="compareFn" #categoryM="ngModel" [(ngModel)]="question.categories" 
+                      class="form-control" id="category" name="category" multiple required>
+                  <option *ngFor="let category of categories" [value]="category">
+                    {{category.category}}
+                  </option>
+              </select>
+              <div [hidden]="categoryM.pristine || categoryM.valid" 
+                   class="text-left text-danger">
+                   Category is required
+              </div>
+          </div>
+          
+          <button [hidden]="id" (click)="saveAndAdd = true; onSubmit(); questionForm.reset();" type="button" class="mr-1 btn btn-dark" 
+                  [disabled]="!questionForm.form.valid || submitted">
+                  <fa-icon [icon]="faSave"></fa-icon><fa-icon [icon]="faPlus" class="ml-1"></fa-icon>
+          </button>
+          <button type="submit" class="btn btn-dark" 
+                  [disabled]="!questionForm.form.valid || submitted">
+                  <fa-icon [icon]="faSave"></fa-icon>
+          </button>
+        </form>
+  </app-layout-card-body>
+</app-layout-card>
+
+
+
+
+

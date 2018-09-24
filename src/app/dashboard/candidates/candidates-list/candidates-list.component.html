@@ -1,0 +1,41 @@
+<app-layout-card>
+  <app-layout-card-header>
+    <a (click)="locationBack()"><fa-icon [icon]="faArrowLeft"></fa-icon></a>
+    Candidates
+  </app-layout-card-header>
+  <app-layout-card-body>
+    <form class="form-inline align-items-start">
+      <div class="form-group">
+        <input [(ngModel)]="filterBox" name="filterBox" placeholder="Filter by screen" class="form-control" />
+      </div>
+      <button class="btn btn-dark ml-1" routerLink="new">
+        New <fa-icon [icon]="faPlus"></fa-icon>
+      </button>
+    </form>
+  </app-layout-card-body>
+</app-layout-card>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Candidate</th>
+        <th>Start Screen</th>
+        <th>Score</th>
+        <th>#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let candidate of candidates | filter: filterBox">
+        <td><a routerLink="detail/{{candidate.pk}}">
+          {{candidate.first_name | titlecase }} {{candidate.surname | titlecase }}</a>
+        </td>
+        <td><a routerLink="screen/{{candidate.pk}}">
+          <u>{{candidate.screen_name}}</u></a>
+        </td>
+        <td>{{candidate.score ? candidate.score + '%': 'N/A'}}</td>
+        <td><a><fa-icon [icon]=faTrash (click)="deleteCandidate(candidate)"></fa-icon></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,15 @@
+<a routerLink="../categories">
+  <app-layout-card>
+      <app-layout-card-header>
+        Categories
+      </app-layout-card-header>
+      <app-layout-card-body>
+          <div class="progress-wrapper">
+              <div class="current">{{current}}</div>
+              <round-progress [color]="'#424a52'" [duration]="1600" [responsive]="false" [current]="current" [max]="current"></round-progress>
+          </div>
+      </app-layout-card-body>
+    </app-layout-card>
+</a>
+
+

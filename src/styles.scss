@@ -1,0 +1,42 @@
+body {
+    overflow: hidden;
+    margin:0;
+    height:100%;
+}
+html {
+    height:100%;
+}
+
+a {
+    color: rgb(128,128,128);
+    cursor: pointer;
+}
+
+a:hover {
+    color:rgb(90, 98, 104);
+    text-decoration: none;   
+}
+
+.form-control, button.btn, .card {
+    border-radius: .17rem;
+}
+
+.form-group.required label::after {
+    content: '*';
+    color:red;
+}
+
+.form-control::placeholder, .form-control {
+    color:#adb3ba;
+}
+
+.form-control {
+    border: 1.5px solid #d5dbe0;
+    font-size: 0.9rem;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color:#d5dbe0;
+}
+

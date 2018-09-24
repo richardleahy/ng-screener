@@ -1,0 +1,865 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ng-screener documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ng-screener documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>InMemoryDataService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/in-memory-data.service.ts</code>
+        </p>
+
+
+
+            <p class="comment">
+                <h3>Implements</h3>
+            </p>
+            <p class="comment">
+                        <code>InMemoryDbService</code>
+            </p>
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#candidates">candidates</a>
+                            </li>
+                            <li>
+                                <a href="#categories">categories</a>
+                            </li>
+                            <li>
+                                <a href="#questions">questions</a>
+                            </li>
+                            <li>
+                                <a href="#screens">screens</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createDb">createDb</a>
+                            </li>
+                            <li>
+                                <a href="#post">post</a>
+                            </li>
+                            <li>
+                                <a href="#put">put</a>
+                            </li>
+                            <li>
+                                <a href="#responseInterceptor">responseInterceptor</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="candidates"></a>
+                        <span class="name">
+                            <b>
+                            candidates
+                            </b>
+                            <a href="#candidates"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>candidates:     <code>[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    {
+      id: 1,
+      pk: 1,
+      first_name: &#x27;Bob&#x27;,
+      surname: &#x27;Jones&#x27;,
+      email: &#x27;bob@bob.com&#x27;,
+      screen: this.screens[0].url,
+      screen_pk: 1,
+      screen_name: this.screens[0].name
+    },
+    {
+      id: 2,
+      pk: 2,
+      first_name: &#x27;Billy&#x27;,
+      surname: &#x27;Bob&#x27;,
+      email: &#x27;billy@bob.com&#x27;,
+      screen: this.screens[1].url,
+      screen_pk: 2,
+      screen_name: this.screens[1].name
+    }
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/in-memory-data.service.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="categories"></a>
+                        <span class="name">
+                            <b>
+                            categories
+                            </b>
+                            <a href="#categories"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>categories:     <code>[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    {id: 1, pk:1, category: &#x27;JavaScript&#x27;},
+    {id: 2, pk:2, category: &#x27;Sass&#x27;},
+    {id: 3, pk:3, category: &#x27;HTML&#x27;},
+    {id: 4, pk:4, category: &#x27;Angular&#x27;},
+    {id: 5, pk:5, category: &#x27;CSS&#x27;},
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/app/in-memory-data.service.ts:7</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="questions"></a>
+                        <span class="name">
+                            <b>
+                            questions
+                            </b>
+                            <a href="#questions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>questions:     <code>[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    {
+      id: 1,
+      pk: 1,
+      question: &#x27;What is JavaScript&#x27;, 
+      categories: [this.categories[0]]
+    },
+    {
+      id: 2, 
+      pk: 2,
+      question: &#x27;What is HTML&#x27;, 
+      categories: [this.categories[2]]
+    },
+    {
+      id: 3, 
+      pk: 3,
+      question: &#x27;What is CSS&#x27;, 
+      categories: [this.categories[4]]
+    },
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/in-memory-data.service.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="screens"></a>
+                        <span class="name">
+                            <b>
+                            screens
+                            </b>
+                            <a href="#screens"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>screens:     <code>[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    {
+      id: 1,
+      pk: 1,
+      name: &quot;JavaScript Developer&quot;,
+      questions: [this.questions[0], this.questions[1]],
+      score: 0,
+      questions_answered: 0,
+      url: &#x27;one&#x27;,
+    },
+    {
+      id: 2,
+      pk: 2,
+      name: &quot;HTML Developer&quot;,
+      questions: [this.questions[1]],
+      url: &#x27;two&#x27;,
+      score: 0,
+      questions_answered: 0
+    }
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/in-memory-data.service.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="createDb"></a>
+                        <span class="name">
+                            <b>
+                            createDb
+                            </b>
+                            <a href="#createDb"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>createDb()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="165" class="link-to-prism">src/app/in-memory-data.service.ts:165</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>{ categories: {}; questions: {}; screens: {}; candidates: {}; }</code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="post"></a>
+                        <span class="name">
+                            <b>
+                            post
+                            </b>
+                            <a href="#post"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>post(reqInfo: )</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">src/app/in-memory-data.service.ts:92</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>reqInfo</td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>Observable&lt;HttpResponse&lt;any&gt;&gt;</code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="put"></a>
+                        <span class="name">
+                            <b>
+                            put
+                            </b>
+                            <a href="#put"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>put(reqInfo: )</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/app/in-memory-data.service.ts:130</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>reqInfo</td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>Observable&lt;HttpResponse&lt;any&gt;&gt;</code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="responseInterceptor"></a>
+                        <span class="name">
+                            <b>
+                            responseInterceptor
+                            </b>
+                            <a href="#responseInterceptor"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>responseInterceptor(responseOptions: , requestInfo: )</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/in-memory-data.service.ts:80</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>responseOptions</td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                                <tr>
+                                                        <td>requestInfo</td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { InMemoryDbService } from &#x27;angular-in-memory-web-api&#x27;;
+import { HttpResponse } from &#x27;@angular/common/http&#x27;;
+import { Observable, of } from &#x27;rxjs&#x27;;
+
+export class InMemoryDataService implements InMemoryDbService {
+  
+  categories &#x3D; [
+    {id: 1, pk:1, category: &#x27;JavaScript&#x27;},
+    {id: 2, pk:2, category: &#x27;Sass&#x27;},
+    {id: 3, pk:3, category: &#x27;HTML&#x27;},
+    {id: 4, pk:4, category: &#x27;Angular&#x27;},
+    {id: 5, pk:5, category: &#x27;CSS&#x27;},
+  ];
+  
+  questions &#x3D; [
+    {
+      id: 1,
+      pk: 1,
+      question: &#x27;What is JavaScript&#x27;, 
+      categories: [this.categories[0]]
+    },
+    {
+      id: 2, 
+      pk: 2,
+      question: &#x27;What is HTML&#x27;, 
+      categories: [this.categories[2]]
+    },
+    {
+      id: 3, 
+      pk: 3,
+      question: &#x27;What is CSS&#x27;, 
+      categories: [this.categories[4]]
+    },
+  ];
+
+  screens &#x3D; [
+    {
+      id: 1,
+      pk: 1,
+      name: &quot;JavaScript Developer&quot;,
+      questions: [this.questions[0], this.questions[1]],
+      score: 0,
+      questions_answered: 0,
+      url: &#x27;one&#x27;,
+    },
+    {
+      id: 2,
+      pk: 2,
+      name: &quot;HTML Developer&quot;,
+      questions: [this.questions[1]],
+      url: &#x27;two&#x27;,
+      score: 0,
+      questions_answered: 0
+    }
+  ];
+
+  candidates &#x3D; [
+    {
+      id: 1,
+      pk: 1,
+      first_name: &#x27;Bob&#x27;,
+      surname: &#x27;Jones&#x27;,
+      email: &#x27;bob@bob.com&#x27;,
+      screen: this.screens[0].url,
+      screen_pk: 1,
+      screen_name: this.screens[0].name
+    },
+    {
+      id: 2,
+      pk: 2,
+      first_name: &#x27;Billy&#x27;,
+      surname: &#x27;Bob&#x27;,
+      email: &#x27;billy@bob.com&#x27;,
+      screen: this.screens[1].url,
+      screen_pk: 2,
+      screen_name: this.screens[1].name
+    }
+  ];
+
+  responseInterceptor(responseOptions, requestInfo) {
+    try {
+      if (Array.isArray(responseOptions.body)) {
+        responseOptions.body.map(i &#x3D;&gt; i.pk &#x3D; i.id);
+      } else{
+        responseOptions.body.pk &#x3D; responseOptions.body.id;
+      }
+    } catch (err) {}
+
+    return responseOptions;
+  }
+  
+  post(reqInfo): Observable&lt;HttpResponse&lt;any&gt;&gt; {
+    const resourceUrl &#x3D; reqInfo.resourceUrl;
+    
+    if (resourceUrl.includes(&#x27;login&#x27;)){
+      return of(new HttpResponse(
+        {
+          body: {token: &quot;faketoken&quot;},
+          status: 200
+        }
+      ));
+    } else if (resourceUrl.includes(&#x27;logout&#x27;)){
+      return of(new HttpResponse(
+        {
+          body: {},
+          status: 200
+        }
+      ));
+    } else if (resourceUrl.includes(&#x27;candidates&#x27;)) {
+      let data &#x3D; reqInfo.req.body;
+      let screen &#x3D; this.screens.find(
+        s &#x3D;&gt; s.url &#x3D;&#x3D;&#x3D; reqInfo.req.body.screen);
+      //data.screen &#x3D; screen;
+      data.screen_name &#x3D; screen.name;
+      data.id &#x3D; Math.max(...reqInfo.collection.map(c &#x3D;&gt; c.pk)) + 1;
+      data.pk &#x3D; data.id;
+      data.screen_pk &#x3D; screen.pk;
+      reqInfo.collection.push(data);
+
+      return of(new HttpResponse(
+        {
+          body: {},
+          status: 200
+        }
+      ));
+    }
+  }
+
+  
+  put(reqInfo): Observable&lt;HttpResponse&lt;any&gt;&gt; {
+    const resourceUrl &#x3D; reqInfo.resourceUrl;
+    let item &#x3D; reqInfo.collection.find(i &#x3D;&gt; i.id &#x3D;&#x3D;&#x3D; reqInfo.req.body.pk);
+
+    if (resourceUrl.includes(&#x27;screens&#x27;)){
+      item.name &#x3D; reqInfo.req.body.name;
+      item.questions &#x3D; reqInfo.req.body.questions;
+      return of(new HttpResponse(
+        {
+          body: {},
+          status: 200
+        }
+      ));
+    } else if (resourceUrl.includes(&#x27;candidates&#x27;)) {
+      let data &#x3D; reqInfo.req.body;
+      item.first_name &#x3D; data.first_name;
+      item.surname &#x3D; data.surname;
+      item.email &#x3D; data.email;
+      item.screen &#x3D; data.screen;
+      let screen &#x3D; this.screens.find(
+        s &#x3D;&gt; s.url &#x3D;&#x3D;&#x3D; reqInfo.req.body.screen);
+      item.screen_name &#x3D; screen.name;
+      item.screen_pk &#x3D; screen.pk;
+
+      return of(new HttpResponse(
+        {
+          body: {},
+          status: 200
+        }
+      ));
+    }
+
+  } 
+
+
+  createDb() {
+
+    const categories &#x3D; this.categories;
+
+    const questions &#x3D; this.questions;
+
+    const screens &#x3D; this.screens;
+
+    const candidates &#x3D; this.candidates;
+
+    return {
+      categories, 
+      questions,
+      screens,
+      candidates
+    };
+  }
+  
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'InMemoryDataService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
