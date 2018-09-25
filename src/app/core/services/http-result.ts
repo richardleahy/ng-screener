@@ -29,7 +29,7 @@ export class HttpResult {
     getResponse() {
         return this.response;
     }
-    
+
     /**
      * Get the http status.
      */
@@ -50,21 +50,26 @@ export class HttpResult {
      */
     getBodyError(): string[] {
         let errors = [];
-        
+
         if (this.response.error) {
             if (this.response.error.non_field_errors) {
                 for (let err of this.response.error.non_field_errors) {
                     errors.push(err);
                 }
             } else if (this.response.error) {
-                for (let [k, v] of Object.entries(this.response.error)) {
-                    errors.push(v);
+                if (typeof this.response.error === 'object') {
+                    for (let [k, v] of Object.entries(this.response.error)) {
+                        errors.push(v);
+                    }
+                } else {
+                    errors.push(this.response.message);
                 }
-            }else{
+
+            } else {
                 errors.push(this.response.statusText);
             }
         }
-        
+
         return errors;
     }
 
