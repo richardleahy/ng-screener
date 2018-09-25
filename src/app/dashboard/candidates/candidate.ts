@@ -11,4 +11,5 @@ export class Candidate {
     /** Screen association */
     screen?: Screen;
     screen_pk?: number;
+    screen_name?: string;
 }

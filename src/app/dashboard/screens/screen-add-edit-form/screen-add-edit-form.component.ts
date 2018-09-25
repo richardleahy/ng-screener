@@ -37,6 +37,7 @@ export class ScreenAddEditFormComponent implements OnInit {
   faSave = faSave;
   /** Font Awesome plus icon */
   faPlus = faPlus;
+  filterBox: string;
 
   /**
    * Create a ScreenAddEditFormComponent

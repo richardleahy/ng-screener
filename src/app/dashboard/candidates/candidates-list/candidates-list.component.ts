@@ -23,6 +23,7 @@ export class CandidatesListComponent implements OnInit {
   faPlus = faPlus;
   /** Font Awesome left arrow icon */
   faArrowLeft = faArrowLeft;
+  filterBox: string;
 
   /**
    * Create a CandidatesListComponent.

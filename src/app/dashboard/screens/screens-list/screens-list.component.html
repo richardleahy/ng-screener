@@ -21,7 +21,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let screen of screens | filter: filterBox">
+      <tr *ngFor="let screen of screens">
         <td><a routerLink="detail/{{screen.pk}}">{{screen.name}}</a></td>
         <td><a><fa-icon [icon]=faTrash (click)="deleteScreen(screen)"></fa-icon></a></td>
       </tr>
